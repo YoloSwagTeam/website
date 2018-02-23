@@ -1,0 +1,63 @@
+body {
+    margin: auto;
+    max-width: 700px;
+    font-family: sans-serif;
+    line-height: 1.65;
+    color: #111;
+}
+
+h1 {
+    text-align: center;
+    font-family: comic sans ms;
+    font-weight: bolder;
+}
+
+.title img {
+    width: 100%;
+}
+
+.hide {
+    display: none;
+}
+
+.panel {
+    padding: 5px 25px 5px 25px;
+    font-size: large;
+    color: #eee;
+    background-color: rgba(30, 60, 30, .8);
+    border: 8px solid black;
+    border-radius: 30px;
+}
+
+a {
+    font-weight: bold;
+    color: fuchsia;
+    text-decoration: none;
+}
+
+.rainbow {
+    background: black; /* For browsers that do not support gradients */
+    /* background: -webkit-linear-gradient(left, orange , yellow, green, cyan, blue, violet); /* For Safari 5.1 to 6.0 */
+    /* background: -o-linear-gradient(right, orange, yellow, green, cyan, blue, violet); /* For Opera 11.1 to 12.0 */
+    /* background: -moz-linear-gradient(right, orange, yellow, green, cyan, blue, violet); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, orangered , yellow, green, cyan, blue, violet); /* Standard syntax (must be last) */
+}
+
+.yoloswagteam {
+    background-image: linear-gradient(to right, red , yellow, greenyellow, cyan, violet); /* Standard syntax (must be last) */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    color: #fff;
+    position: relative;
+}
+
+.yoloswagteam:after {
+    background: none;
+    content: attr(data-text);
+    text-shadow: 0px 0px 1px black;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}

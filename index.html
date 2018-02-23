@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+    <head>
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+        <title>YoloSwag Team</title>
+        <link href="static/css/style.css" rel="stylesheet" type="text/css">
+    </head>
+    <body class="rainbow">
+        <h1 class="title"><span class="hide">YoloSwag Team</span><img src="static/img/yoloswagteam.png" alt="yoloswagteam" /></h1>
+        <div class="panel">
+            <p><span class="yoloswagteam">YoloSwagTeam</span> is an
+            experimental collective whose purpose is to
+            share the maintainership of small FOSS projects to avoid the burden
+            of being alone while doing this and having your users frustrated in
+            result because you aren't always available. Also strength comes
+            from the group.</p>
+
+            <p>It is directly inspired from
+            <a href="https://jazzband.co/" target="_blank">jazzband</a> but
+            mostly differs in the kind of projects and the kind of people in it.</p>
+        </div>
+
+        <!--
+            TODO:
+            * how to join
+            * list of projects
+            * list of people
+            * social places
+            * CoC
+            * guidelines.md
+        -->
+        <script>
+        var swags = document.getElementsByClassName("yoloswagteam");
+        for (var i = 0; i < swags.length; ++i) {
+            swags[i].setAttribute("data-text", swags[i].innerText);
+        }
+        </script>
+    </body>
+</html>
