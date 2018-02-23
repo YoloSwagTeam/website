@@ -20,20 +20,110 @@
             mostly differs in the kind of projects and the kind of people in it.</p>
         </div>
 
+        <h1><span class="yoloswagteam">People</span></h1>
+
+        <div class="panel">
+            <div class="grid">
+                <div class="grid-cell">
+                    <div class="person">
+                        <a href="https://github.com/psycojoker"><img src="https://avatars2.githubusercontent.com/u/41827?s=460&v=4"></a>
+                        <p><a href="https://github.com/psycojoker">Bram</a></p>
+                    </div>
+                </div>
+                <div class="grid-cell">
+                    <div class="person">
+                        <img src="https://avatars2.githubusercontent.com/u/41827?s=460&v=4">
+                        <p><a href="https://github.com/psycojoker">Bram</a></p>
+                    </div>
+                </div>
+                <div class="grid-cell">
+                    <div class="person">
+                        <img src="https://avatars2.githubusercontent.com/u/41827?s=460&v=4">
+                        <p><a href="https://github.com/psycojoker">Bram</a></p>
+                    </div>
+                </div>
+                <div class="grid-cell">
+                    <div class="person">
+                        <img src="https://avatars2.githubusercontent.com/u/41827?s=460&v=4">
+                        <p><a href="https://github.com/psycojoker">Bram</a></p>
+                    </div>
+                </div>
+                <div class="grid-cell">
+                    <div class="person">
+                        <img src="https://avatars2.githubusercontent.com/u/41827?s=460&v=4">
+                        <p><a href="https://github.com/psycojoker">Bram</a></p>
+                    </div>
+                </div>
+                <div class="grid-cell">
+                    <div class="person">
+                        <img src="https://avatars2.githubusercontent.com/u/41827?s=460&v=4">
+                        <p><a href="https://github.com/psycojoker">Bram</a></p>
+                    </div>
+                </div>
+                <div class="grid-cell">
+                    <div class="person">
+                        <img src="https://avatars2.githubusercontent.com/u/41827?s=460&v=4">
+                        <p><a href="https://github.com/psycojoker">Bram</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h1><span class="yoloswagteam">Projects</span></h1>
+
+        <div class="panel">
+            <div class="grid">
+                <div class="grid-cell">
+                </div>
+            </div>
+        </div>
+
+        <h1><span class="yoloswagteam">How To Join</span></h1>
+
+        <div class="panel">
+            <p>If you consider joining, please read the <a href="#coc">Code of Conduct</a> before doing so, you'll be following it.</p>
+
+            <h3>How to join</h3>
+            <ul>
+                <li>either open a ticket on the <a href="https://github.com/yoloswagteam/website">github repository</a> of this website or ask on <a href="#social">IRC</a> or <a href="#social">Matrix</a></li>
+            </ul>
+
+            <h3>How to include your project</h3>
+            <ul>
+                <li>pouet</li>
+            </ul>
+        </div>
+
+        <h1><span class="yoloswagteam">Code of Conduct</span></h1>
+
+        <div class="panel">
+            <p><span class="yoloswagteam">YoloSwagTeam</span> is dedicated to providing a harassment-free experience for everyone, regardless of gender, gender identity and expression, sexual orientation, disability, physical appearance, body size, age, race, or religion. We do not tolerate harassment of participants in any form.</p>
+            <p>This code of conduct applies to all <span class="yoloswagteam">YoloSwagTeam</span> spaces, including the IRC channel and the Matrix room, both online and off. Anyone who violates this code of conduct may be sanctioned or expelled from these spaces at the discretion of the community managers.</p>
+
+            <p class="footnotes">This anti-harassment policy is based on the example policy from the Geek Feminism wiki, created by the Geek Feminism community.  The longuer version <a href="http://geekfeminism.wikia.com/wiki/Community_anti-harassment/Policy?oldid=35348">of this version</a> also applies here.</p>
+        </div>
+
+
         <!--
             TODO:
-            * how to join
-            * list of projects
-            * list of people
             * social places
-            * CoC
             * guidelines.md
+            * badges
         -->
         <script>
-        var swags = document.getElementsByClassName("yoloswagteam");
-        for (var i = 0; i < swags.length; ++i) {
-            swags[i].setAttribute("data-text", swags[i].innerText);
+        tags = ["h1", "h2", "h3", "h4", "h5", "h6"]
+        for (var i = 0; i < tags.length; ++i) {
+            var sequence = document.getElementsByTagName(tags[i]);
+            for (var hx = 0; hx < sequence.length; ++hx) {
+                sequence[hx].innerHTML = '<span class="yoloswagteam">' + sequence[hx].innerHTML + "</span>";
+            }
         }
+
+        var sequence = document.getElementsByClassName("yoloswagteam");
+        for (var i = 0; i < sequence.length; ++i) {
+            sequence[i].setAttribute("data-text", sequence[i].innerText);
+        }
+
         </script>
     </body>
 </html>

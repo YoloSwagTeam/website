@@ -4,12 +4,21 @@ body {
     font-family: sans-serif;
     line-height: 1.65;
     color: #111;
+    margin-top: 30px;
+    margin-bottom: 50px;
 }
 
 h1 {
     text-align: center;
     font-family: comic sans ms;
     font-weight: bolder;
+    font-size: 70px;
+    margin: 0;
+    word-spacing: -5px;
+}
+
+p {
+    text-indent: 21px;
 }
 
 .title img {
@@ -52,12 +61,54 @@ a {
     position: relative;
 }
 
+.yoloswagteam:before {
+    background: none;
+    content: attr(data-text);
+    text-shadow: 0px 0px 12px rgba(2, 2, 2, 0.5);
+    position: absolute;
+    left: 0;
+    top: 50%;
+    z-index: -2;
+    transform: translateY(-50%);
+}
+
 .yoloswagteam:after {
     background: none;
     content: attr(data-text);
-    text-shadow: 0px 0px 1px black;
+    text-shadow: 3px 3px 0px rgba(4, 4, 4, 0.8);
     position: absolute;
     left: 0;
-    top: 0;
-    z-index: -1;
+    top: 50%;
+    z-index: -2;
+    transform: translateY(-50%);
+}
+
+.footnotes {
+    font-style: italic;
+    font-size: small;
+}
+
+.grid {
+    display: flex;
+    flex-flow: row wrap;
+    align-content: center;
+}
+
+.grid-cell {
+    margin: 12px;
+}
+
+.person {
+    text-align: center;
+    margin: 10px, 10px, 10px 0;
+}
+
+.person p {
+    margin: 0;
+    line-height: 1;
+}
+
+.person img {
+    width: 134px;
+    height: 134px;
 }
