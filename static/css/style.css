@@ -112,3 +112,7 @@ a {
     width: 134px;
     height: 134px;
 }
+
+.no-indent {
+    text-indent: 0;
+}
