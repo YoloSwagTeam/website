@@ -17,7 +17,7 @@ h1 {
     word-spacing: -5px;
 }
 
-p {
+div.panel p:first-child {
     text-indent: 21px;
 }
 
@@ -88,6 +88,23 @@ a {
     font-size: small;
 }
 
+ul.projects-list {
+    list-style-type: none;
+    padding-left: 5px;
+}
+
+ul.projects-list h2 {
+    display: inline;
+}
+
+ul.projects-list a small {
+    font-style: italic;
+    color: darkgrey;
+    font-size: 20px;
+    font-family: "comic sans ms";
+    
+}
+
 .grid {
     display: flex;
     flex-flow: row wrap;
@@ -101,6 +118,26 @@ a {
 .person {
     text-align: center;
     margin: 10px, 10px, 10px 0;
+}
+
+.project-links {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    margin: 0 70px 0 70px;
+}
+
+.project-links a {
+    text-align: center;
+    font-size: 22px;
+}
+
+hr {
+    width: 7%;
+    margin: 40px auto 35px auto;
+    border-color: #2a2a2a;
+    color: #2a2a2a;
+    background-color: #2a2a2a;
 }
 
 .person p {
